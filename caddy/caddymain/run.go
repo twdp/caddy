@@ -495,7 +495,7 @@ func ParseEnvFile(envInput io.Reader) (map[string]string, error) {
 	return envMap, nil
 }
 
-const appName = "Caddy"
+const appName = "tw"
 
 // Flags that control program flow or startup
 var (
