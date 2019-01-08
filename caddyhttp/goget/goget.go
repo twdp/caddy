@@ -18,7 +18,7 @@ func (get Goget) ServeHTTP(w http.ResponseWriter, r *http.Request) (int, error) 
 	//
 	if query["go-get"][0] == "1" {
 		path := r.URL.Path
-		domain := r.URL.Hostname()
+		domain := r.Host
 		fmt.Println(path)
 		fmt.Println(r.Host)
 		fmt.Println(domain)

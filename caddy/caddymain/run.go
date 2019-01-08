@@ -69,6 +69,7 @@ func init() {
 
 // Run is Caddy's main() function.
 func Run() {
+	fmt.Println(caddy.ListPlugins())
 	flag.Parse()
 
 	caddy.AppName = appName
